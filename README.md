@@ -20,7 +20,20 @@ Os testes abaixo visam garantir a funcionalidade correta e a integridade dos dad
 * **Testes de Integração:** Garantir que a comunicação entre o script de teste e a SWAPI ocorra sem falhas.
 * **Testes de Contrato:** Verificar se o formato do JSON recebido está em conformidade com o padrão da API pública.
 
-## 3. Tecnologias e ambientes utilizados para execução do projeto:
+## Arquitetura e estrutura 
+O projeto foi estruturado para garantir a separação entre a lógica de teste e a configuração das requisições, facilitando a manutenção e escalabilidade:
+
+* **Estrutura de Pastas:** Organização seguindo as convenções do Cypress, com separação clara entre os specs de teste e os arquivos de suporte.
+
+* **API Testing Approach:** Utilização do comando cy.request() para interagir diretamente com os endpoints da SWAPI, eliminando a necessidade de interface gráfica e acelerando a execução dos testes.
+
+* **Validação de Contrato:** Implementação de checagens para garantir que as propriedades do objeto JSON retornado (como name, height, gender) estejam presentes e no formato correto.
+
+* **Hooks de Teste:** Uso de before ou beforeEach para configurações globais, como a definição da baseUrl no arquivo cypress.config.js.
+
+* **Assertions:** Uso da biblioteca Chai integrada ao Cypress para validar múltiplos pontos de dados em uma única resposta, garantindo a integridade da informação consultada.
+
+## Tecnologias e ambientes utilizados para execução do projeto:
 - Cypress v10.11.0
 - Node JS v20.15.0
 - Google Chrome v126.0.6478.126
@@ -29,7 +42,7 @@ Os testes abaixo visam garantir a funcionalidade correta e a integridade dos dad
 - GIT
 
 
-## 1. **Testes/Validações**
+## **Testes e Validações**
 
 ### Recuperação e validação de informações de personagens
 
