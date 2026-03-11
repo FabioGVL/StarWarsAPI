@@ -4,7 +4,7 @@ Os testes abaixo visam garantir a funcionalidade correta e a integridade dos dad
 *Todos os testes foram realizados utilizando a ferramenta de automação CYPRESS*
 
 
-## **Testes/Validações**
+## 1. **Testes/Validações**
 
 ### Recuperação e validação de informações de personagens
 
@@ -91,7 +91,7 @@ Os testes abaixo visam garantir a funcionalidade correta e a integridade dos dad
 
 
 
-## Bugs encontrados
+## 2. Bugs encontrados
 
 ### Personagem inexistente
 
@@ -125,7 +125,7 @@ Os testes abaixo visam garantir a funcionalidade correta e a integridade dos dad
 
 
 
-
+---
 
 ### Dados inconsistentes - Personagem R2-D2
 
@@ -139,34 +139,35 @@ Os testes abaixo visam garantir a funcionalidade correta e a integridade dos dad
 
 
 
-## Passos para reproduzir reproduzir/encontrar o erro
+## Passos para reproduzir o erro
 
- *1. Crie uma pasta no seu desktop, abra e execute o powershell dentro da mesma*
+### Efetuando o download e descompactando o projeto
+- No GitHub, clique em "code".
+- Clique em "Download Zip" para fazer o download do arquivo deste teste.
+- No seu computador, localize o download efetuado.
+- Descompacte o arquivo.
 
- *2. Obtenha o código da automação através do comando git clone https://github.com/FabioGVL/StarWarsAPI.git no PowerShell*
+### Configurando o projeto no VSCode e executando o teste
+- Abra o VSCode.
+- Clique em `Arquivo/File`.
+- Clique em `Abrir pasta/Open folder`.
+- Escolha a pasta do arquivo descompactado (`StarWarsAPI-master`).
+- Após o projeto ser aberto no VSCode, navegue até `Cypress > E2E`.
+- Os testes estarão dentro das pastas `UI`.
+- No terminal do Cypress digite `npx cypress open`. Caso necessário, instale o Cypress através do comando `npm install cypress`.
+- Aguarde o Cypress abrir.
+- Selecione a opção `E2E Testing`.
+- Na próxima página selecione o navegador desejado.
+- Na próxima página selecione o teste que deseja executar e a automação será executada.
+- Também é possível executar o teste através do comando `npx cypress run`. O teste rodará dentro do próprio VSCode e serão gerados vídeos dos resultados dos testes. Os vídeos ficarão armazenados no destino `Cypress > Vídeos`.
+- Clique em testeStarWarsApi.cy.js
+- Aguarde a conclusão dos testes
+- Após a conclusão, o Cypress informará que o teste falhou
+- Acesse https://swapi.dev/api/people/3/ através do seu navegador ou insira a url no Postman
+- Faça o comparativo entre informações contidas no test crash do Cypress e na URL acima
 
- *3. Abra o VsCode, clique em "File" e em seguida em "Open Folder"*
 
- *5. Acesse a pasta cypress/e2e/services/testeStarWarsApi.cy.js*
-
- *6. No VS code, clique em “terminal”, depois clique em “Novo terminal”*
-
- *7. Caso necessário, instale através do terminal o NPM (Gerenciador de pacotes) através do comando “npm install”* 
-
- *8. Executar o comando “npx cypress open” para abrir o framework (npx está sendo usado para executar cypress).*
-
- *9. Após abrir a pop-up do Cypress, clique em E2E Testing e escolha um dos três navegadores: Chrome, Edge ou Electron*
-
-*10. Clique em testeStarWarsApi.cy.js*
-
-*11. Aguarde a conclusão dos testes*
-
-*12. Após a conclusão, o Cypress informará que o teste falhou*
-
-*13. Acesse https://swapi.dev/api/people/3/ através do seu navegador ou insira a url no Postman*
-
-*14. Faça o comparativo entre informações contidas no test crash do Cypress e na URL acima*
-
+---
 
 
 ### Dados inconsistentes - Personagem Leia Organa
@@ -181,36 +182,35 @@ Os testes abaixo visam garantir a funcionalidade correta e a integridade dos dad
 
 
 
-## Passos para reproduzir reproduzir/encontrar o erro
+## Passos para reproduzir o erro
 
- *1. Crie uma pasta no seu desktop, abra e execute o powershell dentro da mesma*
+### Efetuando o download e descompactando o projeto
+- No GitHub, clique em "code".
+- Clique em "Download Zip" para fazer o download do arquivo deste teste.
+- No seu computador, localize o download efetuado.
+- Descompacte o arquivo.
 
- *2. Obtenha o código da automação através do comando git clone https://github.com/FabioGVL/StarWarsAPI.git no PowerShell*
-
- *3. Abra o VsCode, clique em "File" e em seguida em "Open Folder"*
-
- *5. Acesse a pasta cypress/e2e/services/testeStarWarsApi.cy.js*
-
- *6. No VS code, clique em “terminal”, depois clique em “Novo terminal”*
-
- *7. Caso necessário, instale através do terminal o NPM (Gerenciador de pacotes) através do comando “npm install”* 
-
- *8. Executar o comando “npx cypress open” para abrir o framework (npx está sendo usado para executar cypress).*
-
- *9. Após abrir a pop-up do Cypress, clique em E2E Testing e escolha um dos três navegadores: Chrome, Edge ou Electron*
-
-*10. Clique em testeStarWarsApi.cy.js*
-
-*11. Aguarde a conclusão dos testes*
-
-*12. Após a conclusão, o Cypress informará que o teste falhou*
-
-*13. Acesse https://swapi.dev/api/people/3/ através do seu navegador ou insira a url no Postman*
-
-*14. Faça o comparativo entre informações contidas no test crash do Cypress e na URL acima*
-
+### Configurando o projeto no VSCode e executando o teste
+- Abra o VSCode.
+- Clique em `Arquivo/File`.
+- Clique em `Abrir pasta/Open folder`.
+- Escolha a pasta do arquivo descompactado (`StarWarsAPI-master`).
+- Após o projeto ser aberto no VSCode, navegue até `Cypress > E2E`.
+- Os testes estarão dentro das pastas `UI`.
+- No terminal do Cypress digite `npx cypress open`. Caso necessário, instale o Cypress através do comando `npm install cypress`.
+- Aguarde o Cypress abrir.
+- Selecione a opção `E2E Testing`.
+- Na próxima página selecione o navegador desejado.
+- Na próxima página selecione o teste que deseja executar e a automação será executada.
+- Também é possível executar o teste através do comando `npx cypress run`. O teste rodará dentro do próprio VSCode e serão gerados vídeos dos resultados dos testes. Os vídeos ficarão armazenados no destino `Cypress > Vídeos`.
+- Clique em testeStarWarsApi.cy.js
+- Aguarde a conclusão dos testes
+- Após a conclusão, o Cypress informará que o teste falhou
+- Acesse https://swapi.dev/api/people/3/ através do seu navegador ou insira a url no Postman
+- Faça o comparativo entre informações contidas no test crash do Cypress e na URL acima
 
 
+---
 
 
 ### Dados inconsistentes - Personagem Beru Whitesun lars
@@ -225,36 +225,35 @@ Os testes abaixo visam garantir a funcionalidade correta e a integridade dos dad
 
 
 
-## Passos para reproduzir reproduzir/encontrar o erro
+## Passos para reproduzir o erro
 
- *1. Crie uma pasta no seu desktop, abra e execute o powershell dentro da mesma*
+### Efetuando o download e descompactando o projeto
+- No GitHub, clique em "code".
+- Clique em "Download Zip" para fazer o download do arquivo deste teste.
+- No seu computador, localize o download efetuado.
+- Descompacte o arquivo.
 
- *2. Obtenha o código da automação através do comando git clone https://github.com/FabioGVL/StarWarsAPI.git no PowerShell *
-
- *3. Abra o VsCode, clique em "File" e em seguida em "Open Folder"*
-
- *5. Acesse a pasta cypress/e2e/services/testeStarWarsApi.cy.js*
-
- *6. No VS code, clique em “terminal”, depois clique em “Novo terminal”*
-
- *7. Caso necessário, instale através do terminal o NPM (Gerenciador de pacotes) através do comando “npm install”* 
-
- *8. Executar o comando “npx cypress open” para abrir o framework (npx está sendo usado para executar cypress).*
-
- *9. Após abrir a pop-up do Cypress, clique em E2E Testing e escolha um dos três navegadores: Chrome, Edge ou Electron *
-
-*10. Clique em testeStarWarsApi.cy.js*
-
-*11. Aguarde a conclusão dos testes*
-
-*12. Após a conclusão, o Cypress informará que o teste falhou*
-
-*13. Acesse https://swapi.dev/api/people/3/ através do seu navegador ou insira a url no Postman*
-
-*14. Faça o comparativo entre informações contidas no test crash do Cypress e na URL acima*
-
+### Configurando o projeto no VSCode e executando o teste
+- Abra o VSCode.
+- Clique em `Arquivo/File`.
+- Clique em `Abrir pasta/Open folder`.
+- Escolha a pasta do arquivo descompactado (`StarWarsAPI-master`).
+- Após o projeto ser aberto no VSCode, navegue até `Cypress > E2E`.
+- Os testes estarão dentro das pastas `UI`.
+- No terminal do Cypress digite `npx cypress open`. Caso necessário, instale o Cypress através do comando `npm install cypress`.
+- Aguarde o Cypress abrir.
+- Selecione a opção `E2E Testing`.
+- Na próxima página selecione o navegador desejado.
+- Na próxima página selecione o teste que deseja executar e a automação será executada.
+- Também é possível executar o teste através do comando `npx cypress run`. O teste rodará dentro do próprio VSCode e serão gerados vídeos dos resultados dos testes. Os vídeos ficarão armazenados no destino `Cypress > Vídeos`.
+- Clique em testeStarWarsApi.cy.js
+- Aguarde a conclusão dos testes
+- Após a conclusão, o Cypress informará que o teste falhou
+- Acesse https://swapi.dev/api/people/3/ através do seu navegador ou insira a url no Postman
+- Faça o comparativo entre informações contidas no test crash do Cypress e na URL acima
 
 
+---
 
 
 ### Dados inconsistentes - Personagem R5-D4
@@ -269,30 +268,41 @@ Os testes abaixo visam garantir a funcionalidade correta e a integridade dos dad
 
 
 
-## Passos para reproduzir reproduzir/encontrar o erro
+## Passos para reproduzir o erro
 
- *1. Crie uma pasta no seu desktop, abra e execute o powershell dentro da mesma*
+### Efetuando o download e descompactando o projeto
+- No GitHub, clique em "code".
+- Clique em "Download Zip" para fazer o download do arquivo deste teste.
+- No seu computador, localize o download efetuado.
+- Descompacte o arquivo.
 
- *2. Obtenha o código da automação através do comando git clone https://github.com/FabioGVL/StarWarsAPI.git no PowerShell*
+### Configurando o projeto no VSCode e executando o teste
+- Abra o VSCode.
+- Clique em `Arquivo/File`.
+- Clique em `Abrir pasta/Open folder`.
+- Escolha a pasta do arquivo descompactado (`StarWarsAPI-master`).
+- Após o projeto ser aberto no VSCode, navegue até `Cypress > E2E`.
+- Os testes estarão dentro das pastas `UI`.
+- No terminal do Cypress digite `npx cypress open`. Caso necessário, instale o Cypress através do comando `npm install cypress`.
+- Aguarde o Cypress abrir.
+- Selecione a opção `E2E Testing`.
+- Na próxima página selecione o navegador desejado.
+- Na próxima página selecione o teste que deseja executar e a automação será executada.
+- Também é possível executar o teste através do comando `npx cypress run`. O teste rodará dentro do próprio VSCode e serão gerados vídeos dos resultados dos testes. Os vídeos ficarão armazenados no destino `Cypress > Vídeos`.
+- Clique em testeStarWarsApi.cy.js
+- Aguarde a conclusão dos testes
+- Após a conclusão, o Cypress informará que o teste falhou
+- Acesse https://swapi.dev/api/people/3/ através do seu navegador ou insira a url no Postman
+- Faça o comparativo entre informações contidas no test crash do Cypress e na URL acima
 
- *3. Abra o VsCode, clique em "File" e em seguida em "Open Folder"*
 
- *5. Acesse a pasta cypress/e2e/services/testeStarWarsApi.cy.js*
+---
 
- *6. No VS code, clique em “terminal”, depois clique em “Novo terminal”*
 
- *7. Caso necessário, instale através do terminal o NPM (Gerenciador de pacotes) através do comando “npm install”* 
-
- *8. Executar o comando “npx cypress open” para abrir o framework (npx está sendo usado para executar cypress).*
-
- *9. Após abrir a pop-up do Cypress, clique em E2E Testing e escolha um dos três navegadores: Chrome, Edge ou Electron*
-
-*10. Clique em testeStarWarsApi.cy.js*
-
-*11. Aguarde a conclusão dos testes*
-
-*12. Após a conclusão, o Cypress informará que o teste falhou*
-
-*13. Acesse https://swapi.dev/api/people/3/ através do seu navegador ou insira a url no Postman*
-
-*14. Faça o comparativo entre informações contidas no test crash do Cypress e na URL acima*
+## 3. Ferramentas e ambientes utilizados para execução do projeto:
+- Cypress v10.11.0
+- Node JS v20.15.0
+- Google Chrome v126.0.6478.126
+- Windows 11 v23H2
+- Postman
+- GIT
