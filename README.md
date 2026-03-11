@@ -1,4 +1,5 @@
-#Escopo do Projeto
+# Escopo do Projeto
+
 Os testes abaixo visam garantir a funcionalidade correta e a integridade dos dados fornecidos pela API.
 *Todos os testes foram realizados utilizando a ferramenta de automação CYPRESS*
 
