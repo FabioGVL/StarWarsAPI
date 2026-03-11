@@ -3,6 +3,31 @@
 Os testes abaixo visam garantir a funcionalidade correta e a integridade dos dados fornecidos pela API.
 *Todos os testes foram realizados utilizando a ferramenta de automação CYPRESS*
 
+## Escopo do Teste
+
+### 1. Mapeamento de Features:
+* **Enciclopédia SWAPI:** Consulta de dados sobre personagens, planetas, naves e filmes da franquia Star Wars.
+
+### 2. Features Testadas:
+* **Busca de Entidades:** Validação de retorno de dados específicos (como atributos de personagens e planetas).
+* **Consistência de Resposta:** Verificação se os IDs consultados trazem as informações corretas e íntegras.
+
+### 3. Massa de Dados para Teste:
+* **IDs Específicos:** Lista de identificadores de personagens e planetas conhecidos para validar a precisão dos dados retornados.
+
+### 4. Tipos de Testes Utilizados:
+* **Testes de Funcionalidade:** Garantir que os endpoints da API estão operando e retornando os dados conforme o esperado.
+* **Testes de Integração:** Garantir que a comunicação entre o script de teste e a SWAPI ocorra sem falhas.
+* **Testes de Contrato:** Verificar se o formato do JSON recebido está em conformidade com o padrão da API pública.
+
+## 3. Tecnologias e ambientes utilizados para execução do projeto:
+- Cypress v10.11.0
+- Node JS v20.15.0
+- Google Chrome v126.0.6478.126
+- Windows 11 v23H2
+- Postman
+- GIT
+
 
 ## 1. **Testes/Validações**
 
@@ -294,15 +319,3 @@ Os testes abaixo visam garantir a funcionalidade correta e a integridade dos dad
 - Após a conclusão, o Cypress informará que o teste falhou
 - Acesse https://swapi.dev/api/people/3/ através do seu navegador ou insira a url no Postman
 - Faça o comparativo entre informações contidas no test crash do Cypress e na URL acima
-
-
----
-
-
-## 3. Ferramentas e ambientes utilizados para execução do projeto:
-- Cypress v10.11.0
-- Node JS v20.15.0
-- Google Chrome v126.0.6478.126
-- Windows 11 v23H2
-- Postman
-- GIT
